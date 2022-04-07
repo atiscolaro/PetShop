@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    background-color: #e5e5e5d6;
+}
+
+header {
+    width: 100vw;
+}
+
+.header1 {
+    background-color: #222222;
+    display: flex;
+    padding: 1rem 0px;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.header1 p{
+    color: white;
+    margin-left: 15rem;
+}
+
+.header1 p:hover {
+    color: blue;
+    transition: 1s;
+}
+
+.navheader1{
+    margin-right: 4rem;
+}
+.navheader1 a {
+    text-decoration: none;
+    color: white;
+    padding-right: 2rem;
+}
+/* fin header 1 */
+
+.header2 {
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 0;
+    font-size: 2rem;
+}
+
+.header2 p{
+    font-weight: bold;
+    padding-left: 6rem;
+    color: white;
+}
+.header2 span {
+    color: black;
+}
+.header2 p::before {
+    content: url("./images/Cat.png");
+    padding-right: 0.5rem;
+}
+
+.header2 p::after {
+    content: url("./images/Dog.png");
+    padding-left: 0.5rem;
+}
+
+.header2 img {
+    margin-left: 3rem;
+}
+
+.navheader2 {
+    margin-right: 4rem;
+
+}
+
+.navheader2 a {
+    text-decoration: none;
+    color: white;
+    margin-right: 2.5rem;
+}
+
+.navheader2 a::before {
+    content: url("./images/pawprintChica.png");
+    padding-right: 0.5rem;
+}
+
+/* fin header 2 */
+
+.container1 {
+    width: 100vw;
+    height: 50rem;
+    background-image: url("./images/bowlcompleto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.container1 article {
+    display: block;
+    margin: 0 auto;
+    margin-right: 7rem;
+    width: 45rem;
+}
+.container1 .p1{
+    background-color: white;
+    display: block;
+    font-size: 3.5rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.container1 .p2 {
+    font-size: 2rem;
+    display: block;
+    margin: 2rem auto;
+    width: fit-content;
+    font-size: 2.3rem;
+}
+
+.container1 button {
+    background-color: #F0A83E;
+    padding: 1.5rem;
+    color: white;
+    display: block;
+    margin: 2rem auto;
+    font-size: 1.6rem;
+    /* border: none; */
+}
+
+.container1 button:active{
+    background-color: crimson;
+    padding: 2rem;
+    color: #666666;
+}
+
+/* fin de la primera section del main **corregir tamaño imagen para pantallas */
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    align-items: center;
+
+}
+.container2 img {
+    width: 8rem;
+    margin: 2rem 0 1rem;
+}
+
+.container2 h1 {
+    font-size: 4rem;
+}
+
+.listacont2 {
+    display: flex;
+    padding: 2rem;
+    font-size: 1.6rem;
+    gap: 1rem;
+    color:#666666;
+}
+
+/* fin de la segunda seccion del main */
+
+.muestraItems {
+    display: flex;
+    gap: 7rem;
+    justify-content: center;
+}
+
+.churrasquito{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    background-color: #FBFAF6;
+
+}
+
+.churrasquito .p1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.churrasquito .p2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #F0A83E;
+    padding: 1rem;
+}
+
+.comederoPerro{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    background-color: #FBFAF6;
+}
+
+.comederoPerro .p1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.comederoPerro .p2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #F0A83E;
+    padding: 1rem;
+}
+
+.jugueteHuesito {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    background-color: #FBFAF6;
+}
+
+.jugueteHuesito .p1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.jugueteHuesito .p2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #F0A83E;
+    padding: 1rem;
+}
+
+/* fin de la tercera seccion main items/fotos */
+
+/* aca va el formulario */
+
+
+/* aca empieza el footer */
+.navFooter {
+    background-color: #F0A83E;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding-left: 8rem;
+    justify-content: space-between;
+}
+
+.navFooter p {
+    color: white;
+    font-size: 1.7rem;
+    padding-left: 2rem;
+}
+
+.footerseccion1 {
+    display: flex;
+}
+
+.footerseccion2 {
+    display: flex;
+    justify-content: end;
+    padding-right: 5rem;
+    gap: 1rem;
+
+}
+
+.buttonfoot {
+    background-color: black;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 2.5rem;
+    font-size: 1.5rem;
+    border: none;
+}
+
+.inputfoot {
+    width: 35rem;
+    border-radius: 1.5rem;
+    border: none;
+    padding-left: 1rem;
+
+}
+/* termina primera parte del Footer */
+
+.footerSeccion1 {
+    background-color: #3C2313;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10rem;
+    
+}
+
+.logoFooter {
+    display: block;
+    margin: auto 0;
+} 
+
+.logoFooter img {
+    width: 20rem;
+}
+
+.footerSeccio1--logos {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem 0;
+    width: 4rem;
+}
+
+.ultima {
+    background-color: #222222;
+}
+
+.ultima p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.footerSeccio1--container {
+    display: flex;
+}
+
+.footerSeccio1--textos {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 2rem;
+    gap: 4rem;
+    padding: 3.5rem 3rem;
+}
+
+.labelF{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin-top: 9rem;
+}
+
+.ingresosF {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem;
+    
+    
+}
+
+.field {
+    background-color: #3C2313;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    width: 45rem;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 5rem;
+   
+}
+
+.button1, .button2 {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    width: 14rem;
+    color: white;
+    border: none;
+    }
+
+.button1 {
+    background-color: #8A8787;
+}
+
+.button2 {
+    background-color: #F0A83E;
+}
